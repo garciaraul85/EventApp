@@ -13,12 +13,6 @@ class EventListViewController: UIViewController {
 //    private let coreDataManager = CoreDataManager()
     var viewModel: EventListViewModel!
     
-    static func instantiate() -> EventListViewController {
-        let storyBoard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = storyBoard.instantiateViewController(identifier: "EventListViewController") as! EventListViewController
-        return controller
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()

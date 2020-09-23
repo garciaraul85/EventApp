@@ -21,6 +21,8 @@
 		F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */; };
 		F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */; };
 		F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */; };
+		F8FDE9DC251B8423002C9EDB /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9DB251B8423002C9EDB /* AddEventViewController.swift */; };
+		F8FDE9DE251B84C6002C9EDB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9DD251B84C6002C9EDB /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
+		F8FDE9DB251B8423002C9EDB /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		F8FDE9DD251B84C6002C9EDB /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				F8CE6684251AB10100D926C8 /* LaunchScreen.storyboard */,
 				F8CE667F251AB0FE00D926C8 /* Main.storyboard */,
 				F8FDE9C9251AB9D9002C9EDB /* EventListViewController.swift */,
+				F8FDE9DB251B8423002C9EDB /* AddEventViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */,
+				F8FDE9DD251B84C6002C9EDB /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8FDE9C4251AB660002C9EDB /* AppCoordinator.swift in Sources */,
+				F8FDE9DC251B8423002C9EDB /* AddEventViewController.swift in Sources */,
 				F8FDE9CA251AB9D9002C9EDB /* EventListViewController.swift in Sources */,
 				F8CE667E251AB0FE00D926C8 /* ViewController.swift in Sources */,
 				F8CE667A251AB0FE00D926C8 /* AppDelegate.swift in Sources */,
@@ -209,6 +216,7 @@
 				F8FDE9CD251ABE6B002C9EDB /* UIColor+Extensions.swift in Sources */,
 				F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */,
 				F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */,
+				F8FDE9DE251B84C6002C9EDB /* UIViewController+.swift in Sources */,
 				F8CE667C251AB0FE00D926C8 /* SceneDelegate.swift in Sources */,
 				F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */,
 				F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */,

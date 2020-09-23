@@ -17,7 +17,7 @@ final class EventListCoordinator: Coordinator {
     
     func start() {
         // Root of eventList
-        let eventListViewController = EventListViewController.instantiate()
+        let eventListViewController: EventListViewController = .instantiate()
         // Instantiate VM
         let eventListViewModel = EventListViewModel()
         // Bind coordinator to VM
