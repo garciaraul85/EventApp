@@ -17,9 +17,13 @@ final class AddEventCoordinator: Coordinator {
     }
     
     func start() {
+        // create add event view controller
         let addEventViewController: AddEventViewController = .instantiate()
-        // create add event view controller        
         // create add event VM
+        let addEventViewModel = AddEventViewModel()
+        addEventViewController.viewModel = addEventViewModel
         // present modally controller using navigation controller
+        navigationController.present(addEventViewController, animated: true, completion: nil)
+        
     }
 }

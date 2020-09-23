@@ -23,6 +23,7 @@
 		F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */; };
 		F8FDE9DC251B8423002C9EDB /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9DB251B8423002C9EDB /* AddEventViewController.swift */; };
 		F8FDE9DE251B84C6002C9EDB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9DD251B84C6002C9EDB /* UIViewController+.swift */; };
+		F8FDE9E0251B8681002C9EDB /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9DF251B8681002C9EDB /* AddEventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 		F8FDE9DB251B8423002C9EDB /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		F8FDE9DD251B84C6002C9EDB /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		F8FDE9DF251B8681002C9EDB /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */,
+				F8FDE9DF251B8681002C9EDB /* AddEventViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				F8CE667C251AB0FE00D926C8 /* SceneDelegate.swift in Sources */,
 				F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */,
 				F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */,
+				F8FDE9E0251B8681002C9EDB /* AddEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
