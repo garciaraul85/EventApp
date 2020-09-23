@@ -30,9 +30,24 @@
                     <view key="view" contentMode="scaleToFill" id="z2I-Mg-Z7W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LtC-Kk-n6X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1f5-ej-62C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LtC-Kk-n6X" firstAttribute="leading" secondItem="1f5-ej-62C" secondAttribute="leading" id="NlJ-cS-9dc"/>
+                            <constraint firstItem="1f5-ej-62C" firstAttribute="trailing" secondItem="LtC-Kk-n6X" secondAttribute="trailing" id="Vh6-VO-glG"/>
+                            <constraint firstItem="LtC-Kk-n6X" firstAttribute="top" secondItem="1f5-ej-62C" secondAttribute="top" id="igc-Tl-EfZ"/>
+                            <constraint firstItem="1f5-ej-62C" firstAttribute="bottom" secondItem="LtC-Kk-n6X" secondAttribute="bottom" id="kDl-Kg-GNB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="LtC-Kk-n6X" id="Nqk-4E-oei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0N-cL-c1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
