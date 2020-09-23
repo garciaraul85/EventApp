@@ -6,8 +6,11 @@
 //
 
 import UIKit
+//import CoreData
 
 class EventListViewController: UIViewController {
+    
+//    private let coreDataManager = CoreDataManager()
     
     static func instantiate() -> EventListViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: .main)
@@ -17,7 +20,11 @@ class EventListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addPlusBtn()
+        setupViews()
+        
+        // Test CoreDataManager
+//        coreDataManager.saveEvent(name: "New Years", date: Date(), image: #imageLiteral(resourceName: "NewYears"))
+//        print(coreDataManager.fetchEvents())
     }
     
     private func setupViews() {

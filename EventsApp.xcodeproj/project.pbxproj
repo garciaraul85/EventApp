@@ -17,6 +17,8 @@
 		F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9C6251AB8CE002C9EDB /* EventListCoordinator.swift */; };
 		F8FDE9CA251AB9D9002C9EDB /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9C9251AB9D9002C9EDB /* EventListViewController.swift */; };
 		F8FDE9CD251ABE6B002C9EDB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */; };
+		F8FDE9D0251AEE2D002C9EDB /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9CE251AEE2D002C9EDB /* EventsApp.xcdatamodeld */; };
+		F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F8FDE9C6251AB8CE002C9EDB /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		F8FDE9C9251AB9D9002C9EDB /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F8FDE9CF251AEE2D002C9EDB /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
+		F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 		F8CE666D251AB0FE00D926C8 = {
 			isa = PBXGroup;
 			children = (
+				F8FDE9CE251AEE2D002C9EDB /* EventsApp.xcdatamodeld */,
 				F8CE6678251AB0FE00D926C8 /* EventsApp */,
 				F8CE6677251AB0FE00D926C8 /* Products */,
 			);
@@ -64,6 +69,7 @@
 		F8CE6678251AB0FE00D926C8 /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
+				F8FDE9D1251AEF1E002C9EDB /* Models */,
 				F8FDE9CB251ABE4A002C9EDB /* Extensions */,
 				F8FDE9C8251AB99A002C9EDB /* Views */,
 				F8FDE9C5251AB8B4002C9EDB /* Coordinators */,
@@ -101,6 +107,14 @@
 				F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8FDE9D1251AEF1E002C9EDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +191,9 @@
 				F8FDE9CA251AB9D9002C9EDB /* EventListViewController.swift in Sources */,
 				F8CE667E251AB0FE00D926C8 /* ViewController.swift in Sources */,
 				F8CE667A251AB0FE00D926C8 /* AppDelegate.swift in Sources */,
+				F8FDE9D0251AEE2D002C9EDB /* EventsApp.xcdatamodeld in Sources */,
 				F8FDE9CD251ABE6B002C9EDB /* UIColor+Extensions.swift in Sources */,
+				F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */,
 				F8CE667C251AB0FE00D926C8 /* SceneDelegate.swift in Sources */,
 				F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */,
 			);
@@ -379,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8FDE9CE251AEE2D002C9EDB /* EventsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8FDE9CF251AEE2D002C9EDB /* EventsApp.xcdatamodel */,
+			);
+			currentVersion = F8FDE9CF251AEE2D002C9EDB /* EventsApp.xcdatamodel */;
+			path = EventsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8CE666E251AB0FE00D926C8 /* Project object */;
 }
