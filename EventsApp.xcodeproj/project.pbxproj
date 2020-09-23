@@ -19,6 +19,7 @@
 		F8FDE9CD251ABE6B002C9EDB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */; };
 		F8FDE9D0251AEE2D002C9EDB /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9CE251AEE2D002C9EDB /* EventsApp.xcdatamodeld */; };
 		F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */; };
+		F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F8FDE9CC251ABE6B002C9EDB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F8FDE9CF251AEE2D002C9EDB /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
 		F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		F8CE6678251AB0FE00D926C8 /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
+				F8FDE9D6251B7B60002C9EDB /* ViewModel */,
 				F8FDE9D1251AEF1E002C9EDB /* Models */,
 				F8FDE9CB251ABE4A002C9EDB /* Extensions */,
 				F8FDE9C8251AB99A002C9EDB /* Views */,
@@ -115,6 +118,14 @@
 				F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F8FDE9D6251B7B60002C9EDB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				F8FDE9D0251AEE2D002C9EDB /* EventsApp.xcdatamodeld in Sources */,
 				F8FDE9CD251ABE6B002C9EDB /* UIColor+Extensions.swift in Sources */,
 				F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */,
+				F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */,
 				F8CE667C251AB0FE00D926C8 /* SceneDelegate.swift in Sources */,
 				F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */,
 			);
