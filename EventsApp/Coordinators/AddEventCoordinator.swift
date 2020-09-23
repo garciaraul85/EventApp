@@ -9,6 +9,7 @@ import UIKit
 
 final class AddEventCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
+    var parentCoordinator: EventListCoordinator?
     
     private let navigationController: UINavigationController
     
@@ -21,9 +22,19 @@ final class AddEventCoordinator: Coordinator {
         let addEventViewController: AddEventViewController = .instantiate()
         // create add event VM
         let addEventViewModel = AddEventViewModel()
+        addEventViewModel.coordinator = self
         addEventViewController.viewModel = addEventViewModel
         // present modally controller using navigation controller
         navigationController.present(addEventViewController, animated: true, completion: nil)
         
     }
+    
+    func didFinishAddEvent() {
+        parentCoordinator?.childDidFinish(self)
+    }
+    
+    deinit {
+        print("deinit from AddEventCoordinator")
+    }
+    
 }

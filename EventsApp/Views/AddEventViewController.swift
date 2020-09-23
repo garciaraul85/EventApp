@@ -15,4 +15,13 @@ class AddEventViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        viewModel.viewDidDisappear()
+    }
+    
+    deinit {
+        print("deinit AddEventViewController")
+    }
 }
