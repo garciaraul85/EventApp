@@ -20,6 +20,7 @@
 		F8FDE9D0251AEE2D002C9EDB /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9CE251AEE2D002C9EDB /* EventsApp.xcdatamodeld */; };
 		F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */; };
 		F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */; };
+		F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F8FDE9CF251AEE2D002C9EDB /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
 		F8FDE9D2251AEF34002C9EDB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F8FDE9D7251B7B76002C9EDB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				F8FDE9C3251AB660002C9EDB /* AppCoordinator.swift */,
 				F8FDE9C6251AB8CE002C9EDB /* EventListCoordinator.swift */,
+				F8FDE9D9251B7E5B002C9EDB /* AddEventCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				F8FDE9D3251AEF34002C9EDB /* CoreDataManager.swift in Sources */,
 				F8FDE9D8251B7B76002C9EDB /* EventListViewModel.swift in Sources */,
 				F8CE667C251AB0FE00D926C8 /* SceneDelegate.swift in Sources */,
+				F8FDE9DA251B7E5B002C9EDB /* AddEventCoordinator.swift in Sources */,
 				F8FDE9C7251AB8CE002C9EDB /* EventListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

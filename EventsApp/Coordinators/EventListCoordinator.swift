@@ -20,9 +20,17 @@ final class EventListCoordinator: Coordinator {
         let eventListViewController = EventListViewController.instantiate()
         // Instantiate VM
         let eventListViewModel = EventListViewModel()
+        // Bind coordinator to VM
+        eventListViewModel.coordinator = self
         // Bind VM to Controller
         eventListViewController.viewModel = eventListViewModel
         navigationController.setViewControllers([eventListViewController], animated: false)
+    }
+    
+    func startAddEvent() {
+        let addEventCoordinator = AddEventCoordinator(navigationController: navigationController)
+        childCoordinators.append(addEventCoordinator)
+        addEventCoordinator.start()
     }
     
 }
