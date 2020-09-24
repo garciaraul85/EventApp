@@ -55,6 +55,12 @@ final class TitleSubtitleCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func update(with viewModel: TitleSubtitleCellViewModel) {
+        titleLabel.text = viewModel.title
+        subtitleTextfield.text = viewModel.subtitle
+        subtitleTextfield.placeholder = viewModel.placeHolder
+    }
+    
     private func setupViews() {
         verticalStackView.axis = .vertical
         titleLabel.font = .systemFont(ofSize: 22, weight: .medium)
