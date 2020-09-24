@@ -49,7 +49,16 @@ extension AddEventViewController: UITableViewDataSource {
     
     func setDataSource() {
         tableView.dataSource = self
-    
+        
+        tableView.register(TitleSubtitleCell.self, forCellReuseIdentifier: "TitleSubtitleCell")
+        
+        // cell callback
+        viewModel.onUpdate = { [weak self] in
+            self?.tableView.reloadData()
+            
+        }
+        // tell tableview to update
+        viewModel.viewDidDisappear()
     }
 
 }

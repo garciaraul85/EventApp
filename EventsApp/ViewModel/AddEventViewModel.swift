@@ -8,6 +8,9 @@
 import UIKit
 
 final class AddEventViewModel {
+    
+    var onUpdate: () -> Void = {}
+    
     enum Cell {
         case titleSubtitle(TitleSubtitleCellViewModel)
         case titleImage
@@ -19,6 +22,15 @@ final class AddEventViewModel {
     
     func numberOfRows() -> Int {
         return cells.count
+    }
+    
+    // Load cells
+    func viewDidLoad() {
+        cells = [
+            .titleSubtitle(TitleSubtitleCellViewModel(title: "Name", subtitle: "", placeHolder: "Add a name")),
+            .titleSubtitle(TitleSubtitleCellViewModel(title: "Date", subtitle: "", placeHolder: "Select a date"))
+        ]
+        onUpdate()
     }
     
     func viewDidDisappear() {
