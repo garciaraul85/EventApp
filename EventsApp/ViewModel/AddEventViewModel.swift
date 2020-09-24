@@ -8,15 +8,25 @@
 import UIKit
 
 final class AddEventViewModel {
-    var coordinator: AddEventCoordinator?
-    
     enum Cell {
         case titleSubtitle(TitleSubtitleCellViewModel)
         case titleImage
     }
     
+    var coordinator: AddEventCoordinator?
+    
+    private(set) var cells: [AddEventViewModel.Cell] = []
+    
+    func numberOfRows() -> Int {
+        return cells.count
+    }
+    
     func viewDidDisappear() {
         coordinator?.didFinishAddEvent()
+    }
+    
+    func cell(for indexPath: IndexPath) -> Cell {
+        return cells[indexPath.row]
     }
     
     deinit {
